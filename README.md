@@ -88,7 +88,7 @@ Some important files are:
 ## Optimizers (`/root/harp/optimizers`)
 
 There are four optimizer prototypes based on Cunctator:
-* `np_reduce_temp.py`: Reducing temporary variable of numpy using in-place update.
+* `np_reduce_temp.py`: Reducing temporary variable of numpy through using in-place update.
 * `numpy2weld.py`: Converting numpy APIs to weldnumpy APIs.
 * `pandas2spark.py`: Converting pandas APIs to Spark APIs.
 * `spark_optimier.py`: Fixing the usage of `cache()` APIs in Spark programs.
