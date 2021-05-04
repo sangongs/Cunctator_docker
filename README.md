@@ -79,7 +79,7 @@ Cunctator extends Python to support monitoring access to a Python object. The so
 Directory `/root/dharp` contains the source code of Cunctator. 
 
 Some important files are:
-* `watch.py` implements the watching mechanism.
+* `watch.py` implements the watch mechanism.
 * `IR.py` implements the IR scrathpad for recording and evaluating deferred API calls.
 * `lazy.py` implements lazy propagation.
 * `optimier.py` defines the base class for optimizers.
