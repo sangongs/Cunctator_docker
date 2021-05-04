@@ -83,6 +83,7 @@ Some important files are:
 * `IR.py` implements the IR scrathpad for recording and evaluating deferred API calls.
 * `lazy.py` implements lazy propagation.
 * `optimier.py` defines the base class for optimizers.
+* `intercept.py` contains some helper functions for redirecting API calls.
 
 ## Optimizers (`/root/harp/optimizers`)
 
