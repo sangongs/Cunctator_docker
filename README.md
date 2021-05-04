@@ -66,7 +66,7 @@ Additionally, after closing a notebook, jupyter does not automatically kill its 
 ## Run all benchmarks in batch
 ```
 cd ~/dharp/bench
-bash run_all_bench.sh
+numactl --interleave all bash run_all_bench.sh
 ```
 
 # Source code
