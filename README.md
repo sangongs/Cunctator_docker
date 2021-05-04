@@ -35,7 +35,7 @@ We will see logs of `jupyter-notebook` like:
         http://0.0.0.0:8888/?token=14a55ad16715da1da1ec3837e494b7888738b023e09f47de
 ```
 
-Replace the `0.0.0.0` in the url with `localhost`, and then open it with a web browser on the host machine. We will see the web UI of jupyter, in which we can edit or run benchmarks.
+Replace the `0.0.0.0` in the url with `localhost`, and then open it with a web browser on the host machine. We will see the web UI of jupyter, in which we can run or edit benchmarks.
 
 If the docker image runs on a remote machine, make sure the local port `8888` is forwaded to the remote machine. Try using the following command on local machine:
 ```
