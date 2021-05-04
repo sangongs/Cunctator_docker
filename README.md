@@ -42,15 +42,32 @@ If the docker image runs on a remote machine, make sure the local port `8888` is
 ssh -L 8888:localhost:8888 <user>@<yourRemoteMachine>
 ```
 
-#### Run jupyter notebook
+#### Run bechmark
 
-In the web UI, open a benchmark under the directory `bench/`, and then use menu item `Kernel` > `Restart & Run All`.
+In the web UI of jupyter, open a benchmark under the directory `bench/`, and then use menu item `Kernel` > `Restart & Run All`.
 
 ### Run in command line
+```
+cd ~/dharp/bench
+
+# execute the benchmark
+jupyter nbconvert --to notebook --inplace --ExecutePreprocessor.timeout=3600 --execute numpy/p1_add3_baseline.ipynb
+
+# inspect the result
+jupyter nbconvert --to rst --stdout numpy/p1_add3_baseline.ipynb
+```
 
 ### Memory requirement
 
+Due to a memory leak problem of [weld](https://github.com/weld-project/weld), some benchmarks may take up to 128GB memory. To reduce memory usage, try editing the benchmark to use smaller input, or adjusting the number of runs using option `-r` of the [`%timeit` command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit) in the benchmark notebook.
+
+Additionally, after closing a notebook, jupyter does not automatically kill its python kernel, which may use a lot memory. We need to manually kill the kernels to release memory.
+
 ## Run all benchmarks in batch
+```
+cd ~/dharp/bench
+bash run_all_bench.sh
+```
 
 # Source code
 
