@@ -39,7 +39,7 @@ Replace the `0.0.0.0` in the url with `localhost`, and then open it with a web b
 
 If the docker image runs on a remote machine, make sure the local port `8888` is forwaded to the remote machine. Try using the following command on local machine:
 ```
-ssh -L 8888:localhost:8888 <user>@<yourRemoteMachine>
+ssh -L 8888:localhost:8888 <yourRemoteMachine>
 ```
 
 #### Run bechmark
