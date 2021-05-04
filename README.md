@@ -76,4 +76,18 @@ Cunctator extends Python to support monitoring access to a Python object. The so
 
 ## Framework (`/root/dharp`)
 
-## Optimizer
+Directory `/root/dharp` contains the source code of Cunctator. 
+
+Some important files:
+* `watch.py` implements the watching mechanism.
+* `IR.py` implements the IR scrathpad for recording and evaluating deferred API calls.
+* `lazy.py` implements lazy propagation.
+* `optimier.py` defines the base class for optimizers.
+
+## Optimizers (`/root/harp/optimizers`)
+
+There are four optimizer prototypes based on Cunctator:
+* `np_reduce_temp.py`: Reducing temporary variable of numpy using in-place update.
+* `numpy2weld.py`: Converting numpy APIs to weldnumpy APIs.
+* `pandas2spark.py`: Converty pandas APIs to Spark APIs.
+* `spark_optimier.py`: Fix the usage of `cache()` APIs in Spark programs.
