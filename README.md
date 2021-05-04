@@ -71,8 +71,9 @@ bash run_all_bench.sh
 
 # Source code
 
-## Python extension
+## Python extension (`/root/cpython`)
+Cunctator extends Python to support monitoring access to a Python object. The source code is under directory `/root/cpython`. Check its git history for what the extension changes.
 
-## Framework
+## Framework (`/root/dharp`)
 
 ## Optimizer
