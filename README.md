@@ -59,7 +59,7 @@ jupyter nbconvert --to rst --stdout numpy/p1_add3_baseline.ipynb
 
 ### Memory requirement
 
-Due to a memory leak problem of [weld](https://github.com/weld-project/weld), some benchmarks may take up to 128GB memory. To reduce memory usage, try editing the benchmark to use smaller input, or adjusting the number of runs using option `-r` of the [`%timeit` command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit) in the benchmark notebook.
+Due to a memory leak issue of [weld](https://github.com/weld-project/weld), some benchmarks may take up to 128GB memory. To reduce memory usage, try editing the benchmark to use smaller input, or adjusting the number of runs using option `-r` of the [`%timeit` command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-timeit) in the benchmark notebook.
 
 Additionally, after closing a notebook, jupyter does not automatically kill its python kernel, which may use a lot memory. We need to manually kill the kernels to release memory.
 
