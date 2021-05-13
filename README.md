@@ -6,7 +6,7 @@ What follows describes the docker image of Cunctator, including instructions for
 
 # How to run
 
-## Run Cunctator docker image
+## Pull and run Cunctator docker image
 ```
 sudo docker run --privileged -p 8888:8888 -i -t sangongs/cunctator /bin/bash
 ```
