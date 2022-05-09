@@ -72,7 +72,11 @@ numactl --interleave all bash run_all_bench.sh
 # Source code
 
 ## Python extension (`/root/cpython`)
-Cunctator extends Python to support monitoring access to a Python object. The source code is under directory `/root/cpython`. Check its git history for what the extension changes.
+Cunctator extends Python to support monitoring access to a Python object. The source code is under directory `/root/cpython`. Check its git history for what the extension changes:
+```
+cd ~/cpython
+git diff origin/o3.7
+```
 
 ## Framework (`/root/dharp`)
 
@@ -92,3 +96,10 @@ There are four optimizer prototypes based on Cunctator:
 * `numpy2weld.py`: Converting numpy APIs to weldnumpy APIs.
 * `pandas2spark.py`: Converting pandas APIs to Spark APIs.
 * `spark_optimier.py`: Fixing the usage of `cache()` APIs in Spark programs.
+
+## Weld (`/root/weld`)
+We fixed some minor issues of [weld](https://github.com/weld-project/weld). Check its git history for the changes:
+```
+cd ~/weld
+git diff HEAD~3
+```
