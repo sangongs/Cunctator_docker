@@ -85,7 +85,7 @@ Some important files are:
 * `optimier.py` defines the base class for optimizers.
 * `intercept.py` contains some helper functions for redirecting API calls.
 
-## Optimizers (`/root/harp/optimizers`)
+## Optimizers (`/root/dharp/optimizers`)
 
 There are four optimizer prototypes based on Cunctator:
 * `np_reduce_temp.py`: Reducing temporary variable of numpy through using in-place update.
